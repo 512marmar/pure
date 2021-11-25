@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(10, 10, 10);
+}
+nav{
+    margin: 50px;
+    background-color: orangered;
+    font-family: monospace;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+nav ul li {
+    display: inline-block;
+    background-color: orangered;
+}
+nav a {
+    display: block;
+    padding: 0 20px;
+    color: white;
+    font-size: 17px;
+    line-height: 80px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: black;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: monospace;
+}
+p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-family: monospace;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 70px;
+}
+nav ul ul li {
+    width: 160px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul li:hover > ul {
+    display: inherit;
+}
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 160px;
+}
